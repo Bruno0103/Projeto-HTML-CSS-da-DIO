@@ -1,57 +1,102 @@
-.flex{
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
     max-width: 300px;
     padding: 10px;
     border: 20px solid black;
     display: flex;
 }
-.itens{
+
+.itens {
     background-color: aqua;
     margin: 5px;
 }
-.flex-container{
+
+.flex-container {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
 
 }
-.flex-item{
+
+.flex-item {
     background: blue;
     height: 50px;
-    width: 50px;
+    min-width: 50px;
     line-height: 50px;
     font-size: 20px;
     color: white;
     text-align: center;
     margin: 5px;
 }
-.row{
+
+.row {
     flex-direction: row;
 }
-.row-reverse{
+
+.row-reverse {
     flex-direction: row-reverse;
 }
-.row-reverse li{
-        background-color: red;
+
+.row-reverse li {
+    background-color: red;
 }
-.column{
+
+.column {
     float: left;
     flex-direction: column;
 }
-.column-reverse{
+
+.column-reverse {
     float: right;
     flex-direction: column-reverse;
 }
-.column li{
+
+.column li {
     background-color: orange;
 }
-.column-reverse li{
+
+.column-reverse li {
     background-color: purple;
 }
-.no-wrap{
+
+.box {
+    min-width: 200px;
+    max-width: 250px;
+    height: 145px;
+    background-color: rgba(131, 131, 131, 0.418);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.flex-wrap {
+
+    margin: auto;
+    padding: 10px;
+    width: 640px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-wrap ul li {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.no-wrap {
     flex-wrap: nowrap;
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap;
-    
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
