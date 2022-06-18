@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(63, 63, 63);
+}
 .display-flex {
     display: flex;
     flex-direction: column;
@@ -20,7 +23,9 @@
     padding: 0;
     display: flex;
     list-style: none;
-
+    border: solid black;
+    margin: 8px;
+    border-radius: 4px;
 }
 
 .flex-item {
@@ -32,6 +37,7 @@
     color: white;
     text-align: center;
     margin: 5px;
+    border-radius: 4px;
 }
 
 .row {
@@ -99,4 +105,39 @@
 
 .wrap-reverse {
     flex-wrap: wrap-reverse;
+}
+
+.flex-grow-0 {
+    flex-grow: 0;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.flex-grow-4 {
+    flex-grow: 4;
+}
+.flex-basis-0{
+    flex-basis: 0;
+}
+.flex-basis-1{
+    flex-basis: 1;
+}
+.flex-basis-2{
+    flex-basis: 2;
+}
+.flex-basis-auto{
+    flex-basis: auto;
+}
+.flex-basis-100px{
+    flex-basis: 100px;
 }
